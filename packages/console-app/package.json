@@ -1,0 +1,19 @@
+{
+  "name": "console-app",
+  "version": "0.0.0",
+  "description": "Developer Console Application",
+  "author": "Blaise <blaise@advancedkiosks.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/console-app.test.js"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "Project Setup (DO NOT USE)",
+      "commands": [
+        "npm install lerna",
+        "npx lerna init",
+        "npx lerna add-caching",
+        "npx tsc --init",
+        "npm i --save-dev @types/node",
+        "npx lerna create desktop-app",
+        "npx lerna create web-app"
+      ]
+    },
+    {
+      "name": "Build",
+      "commands": [
+        "npm install",
+        "rm ./dist -r -force",
+        "npx tsc"
+      ],
+      "focus": true
+    },
+    {
+      "name": "Run",
+      "commands": [
+        "npm run start"
+      ],
+      "focus": true
+    }
+  ]
+}

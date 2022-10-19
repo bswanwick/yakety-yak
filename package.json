@@ -1,0 +1,26 @@
+{
+  "name": "yakety-yak",
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "deletedist": "rm /dist -r -force",
+    "lint": "eslint \"./packages/**/*.{ts,tsx}\"",
+    "lintfix": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
+    "start": "node dist/packages/console-app/lib/index.js"
+  },
+  "dependencies": {
+    "lerna": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.5",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.0",
+    "typescript": "^4.8.4"
+  }
+}
