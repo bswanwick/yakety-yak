@@ -1,20 +1,12 @@
 {
-  "name": "core-logic",
-  "version": "0.0.0",
-  "description": "I don't want to work, I just want to bang on the drum all day.",
-  "author": "Blaise <blaise@advancedkiosks.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/index.ts",
-  "type": "module",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "name": "@yakety-yak/core-logic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "devDependencies": {},
   "scripts": {
-    "test": "node ./__tests__/core-logic.test.js"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

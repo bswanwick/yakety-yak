@@ -1,26 +1,32 @@
 {
   "name": "yakety-yak",
-  "workspaces": [
-    "packages/*"
-  ],
+  "version": "0.0.0",
+  "description": "A personal project",
+  "main": "index.ts",
+  "author": "",
+  "license": "ISC",
   "type": "module",
+  "workspaces": [
+    "packages\\desktop-app",
+    "packages\\web-app",
+    "packages\\core-logic",
+    "packages\\ui-library",
+    "packages\\data-layer"
+  ],
   "scripts": {
     "deletedist": "rm /dist -r -force",
     "lint": "eslint \"./packages/**/*.{ts,tsx}\"",
     "lintfix": "eslint \"./packages/**/*.{ts,tsx}\" --fix",
-    "start": "node dist/packages/console-app/lib/index.js"
+    "dev": "npx tsc -w"
   },
   "dependencies": {
-    "lerna": "^6.0.0"
+    "@yakety-yak/core-logic": "^1.0.0",
+    "@yakety-yak/data-layer": "^1.0.0",
+    "@yakety-yak/desktop-app": "^1.0.0",
+    "@yakety-yak/ui-library": "^1.0.0",
+    "@yakety-yak/web-app": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.8.5",
-    "@typescript-eslint/eslint-plugin": "^5.40.1",
-    "eslint": "^8.25.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.1.0",
     "typescript": "^4.8.4"
   }
 }

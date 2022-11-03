@@ -1,19 +1,12 @@
 {
-  "name": "web-app",
-  "version": "0.0.0",
-  "description": "Yakety Yak Web Client",
-  "author": "Blaise <blaise@advancedkiosks.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/index.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "name": "@yakety-yak/web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "devDependencies": {},
   "scripts": {
-    "test": "node ./__tests__/web-app.test.js"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

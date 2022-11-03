@@ -2,32 +2,29 @@
   "autorun": false,
   "terminals": [
     {
-      "name": "Project Setup (DO NOT USE)",
+      "name": "init",
       "commands": [
-        "npm install lerna",
-        "npx lerna init",
-        "npx lerna add-caching",
-        "npx tsc --init",
-        "npm i --save-dev @types/node",
-        "npx lerna create desktop-app",
-        "npx lerna create web-app"
+        "npm init",
+        "npm init -w ./packages/desktop-app",
+        "npm init -w ./packages/web-app",
+        "npm init -w ./packages/core-logic",
+        "npm init -w ./packages/data-layer",
+        "npm init -w ./packages/ui-library",
+        "npm i typescript --save-dev",
+        "npx tsc --init"
       ]
     },
     {
-      "name": "Build",
+      "name": "build",
       "commands": [
-        "npm install",
-        "rm ./dist -r -force",
         "npx tsc"
-      ],
-      "focus": true
+      ]
     },
     {
-      "name": "Run",
+      "name": "dev",
       "commands": [
-        "npm run start"
-      ],
-      "focus": true
+        "npx tsc -w"
+      ]
     }
   ]
 }

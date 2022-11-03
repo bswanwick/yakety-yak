@@ -1,8 +1,9 @@
 {
-  "name": "@yakety-yak/desktop-app",
+  "name": "@yakety-yak/ui-library",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
